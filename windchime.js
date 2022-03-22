@@ -5,11 +5,12 @@ let paths = [];
 let g_changeNode = [-1, -1];
 // const synth = new Tone.Synth().toDestination();
 const synth = new Tone.MetalSynth({
-  harmonicity: 27,
-  resonance: 600,
+  harmonicity: 20,
+  resonance: 3000,
+  frequency: 1900,
   modulationIndex: 1,
   envelope: {
-    decay: 1
+    decay: 1.5
   },
   volume: -15
 }).toDestination();
